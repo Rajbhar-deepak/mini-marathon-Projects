@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+
+</head>
+
+<body>
+
+
+    <div class="container p-32  m-3 flex ">
+        <div class="display  ">
+
+            <form class="box1 bg-slate-300 rounded-xl py-3 my-2 w-64 ">
+                <input type="text" name="display" id="display" disabled>
+
+                <div class="mainbox">
+
+                    <div class="rows">
+                        <input class="btns" type="button" value="Ac" class="Ac" onclick="display.value =''">
+                        <input class="btns" type="button" value="Del" class="Del" onclick="deletebtn()">
+                        <input class="numBtns" type="button" class="Symbol" value="." onclick="display.value +='.'">
+                        <input class="numBtns" type="button" class="Symbol" value="/" onclick="display.value +='/'">
+                    </div>
+
+                    <div class="rows" class="rows">
+                        <input class="numBtns" type="button" class="numbersBtns" value="7"
+                            onclick="display.value +='7'">
+                        <input class="numBtns" type="button" class="numbersBtns" value="8"
+                            onclick="display.value +='8'">
+                        <input class="numBtns" type="button" class="numbersBtns" value="9"
+                            onclick="display.value +='9'">
+                        <input class="numBtns" type="button" class="Symbol" value="*" onclick="display.value +='*'">
+                    </div>
+                    <div class="rows">
+                        <input class="numBtns" type="button" class="numbersBtns" value="4"
+                            onclick="display.value +='4'">
+                        <input class="numBtns" type="button" class="numbersBtns" value="5"
+                            onclick="display.value +='5'">
+                        <input class="numBtns" type="button" class="numbersBtns" value="6"
+                            onclick="display.value +='6'">
+                        <input class="numBtns" type="button" class="Symbol" value="-" onclick="display.value +='-'">
+                    </div>
+                    <div class="rows">
+                        <input class="numBtns" class="numBtns" type="button" class="numbersBtns" value="1"
+                            onclick="display.value +='1'">
+                        <input class="numBtns" class="numBtns" type="button" class="numbersBtns" value="2"
+                            onclick="display.value +='2'">
+                        <input class="numBtns" class="numBtns" type="button" class="numbersBtns" value="3"
+                            onclick="display.value +='3'">
+                        <input class="numBtns" class="numBtns" type="button" class="Symbol" value="+"
+                            onclick="display.value +='+'">
+                    </div>
+
+                    <div class="rows">
+                        <input class="numBtns" type="button" class="numbersBtns" value="00"
+                            onclick="display.value +='00'">
+                        <input class="numBtns" type="button" class="numbersBtns" value="0"
+                            onclick="display.value +='0'">
+                        <input class="btns" type="button" value="Del" class="Del" onclick="deletebtn()">
+
+                        <input class="numBtns" type="button" class="equal" value="="
+                            onclick="display.value = eval(display.value)">
+                    </div>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+    </div>
+
+    <script>
+        function deletebtn() {
+            let deletevalue = document.getElementById("display").value;
+            if (deletevalue.length > 0) {
+                document.getElementById("display").value = deletevalue.slice(0, -1);
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

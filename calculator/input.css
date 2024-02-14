@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.box1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding-top: 20px;
+   
+
+}
+
+
+
+#display {
+
+
+    background-color: #B4B4B8;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    font-weight:bolder;
+
+}
+
+.mainbox {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.rows {
+    display: flex;
+    gap: 15px;
+}
+
+.btns {
+
+    border-radius: 8px;
+    background-color: #B4B4B8;
+
+    padding: 12px;
+   
+}
+
+.numBtns {
+    background-color: #B4B4B8;
+
+    border-radius: 8px;
+
+    padding: 15px;
+
+
+}
+
+.btns:hover{
+    background-color: #F2EFE5;
+
+}
+.numBtns:hover{
+    background-color: #F2EFE5;
+
+}
+
+
+
+
